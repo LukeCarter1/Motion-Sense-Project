@@ -1,0 +1,57 @@
+{
+  "data_path": "./data",
+  "sensor_types": [
+    "attitude",
+    "userAcceleration"
+  ],
+  "activities": [
+    "dws",
+    "ups",
+    "wlk",
+    "jog",
+    "sit",
+    "std"
+  ],
+  "window_size": 300,
+  "stride": 75,
+  "normalize": true,
+  "max_samples_per_subject_activity": 800,
+  "train_subjects": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "val_subjects": [
+    15,
+    16,
+    17,
+    18
+  ],
+  "test_subjects": [
+    20,
+    21,
+    22,
+    23
+  ],
+  "batch_size": 16,
+  "epochs": 40,
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "dropout_rate": 0.5,
+  "model_name": "cnn_hybrid",
+  "scheduler_type": "step",
+  "patience": 6,
+  "save_dir": "./results",
+  "save_plots": true,
+  "verbose": false
+}
